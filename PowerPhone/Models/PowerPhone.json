@@ -1,0 +1,50 @@
+[
+  {
+    "@id": "dtmi:com:example:PowerPhone;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "ringer"
+        },
+        "name": "ringer",
+        "schema": "dtmi:com:example:Ringer;1"
+      }
+    ],
+    "displayName": {
+      "en": "Power Phone"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:com:example:Ringer;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:com:example:Ringer:ring;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Ring"
+        },
+        "name": "ring",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Number of Rings"
+          },
+          "name": "numberOfRings",
+          "schema": "integer"
+        }
+      }
+    ]
+  }
+]
