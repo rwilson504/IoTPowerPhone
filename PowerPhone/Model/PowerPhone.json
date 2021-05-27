@@ -6,7 +6,7 @@
       {
         "@type": "Component",
         "displayName": {
-          "en": "ringer"
+          "en": "Ringer"
         },
         "name": "ringer",
         "schema": "dtmi:com:example:Ringer;1"

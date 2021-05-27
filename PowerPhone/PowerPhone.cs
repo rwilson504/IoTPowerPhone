@@ -25,7 +25,7 @@ namespace PowerPhone
         public PowerPhone(DeviceClient deviceClient, ILogger logger)
         {
             _deviceClient = deviceClient ?? throw new ArgumentNullException($"{nameof(deviceClient)} cannot be null.");
-            _logger = logger ?? LoggerFactory.Create(builer => builer.AddConsole()).CreateLogger<PowerPhone>();
+            _logger = logger ?? LoggerFactory.Create(builder => builder.AddConsole()).CreateLogger<PowerPhone>();
         }
 
         public async Task PerformOperationsAsync(CancellationToken cancellationToken)
@@ -55,23 +55,17 @@ namespace PowerPhone
                 controller.OpenPin(21, PinMode.Output);
                 for (int i = 0; i < numberOfRings; i++)
                 {
-                    buzzer.StartPlaying(440);                    
+                    buzzer.StartPlaying(440);                   
                     controller.Write(21, PinValue.High);      
 
-                    await Task.Delay(1000);
+                    await Task.Delay(2000);
 
                     buzzer.StopPlaying();
                     controller.Write(21, PinValue.Low);
+
+                    await Task.Delay(2000);
                 }
                                 
-
-                // _logger.LogDebug($"Command: Received - Rebooting thermostat (resetting temperature reading to 0°C after {delay} seconds).");
-                // await Task.Delay(delay * 1000);
-
-                // _temperature[Thermostat1] = _maxTemp[Thermostat1] = 0;
-                // _temperature[Thermostat2] = _maxTemp[Thermostat2] = 0;
-
-                // _temperatureReadingsDateTimeOffset.Clear();
             }
             catch (JsonReaderException ex)
             {
