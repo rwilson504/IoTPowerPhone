@@ -1,0 +1,18 @@
+[Unit]
+Description=Power Phone .NET Core App
+
+[Service]
+User=pi
+# to query logs using journalctl, set a logical name here
+SyslogIdentifier=PowerPhone
+# systemd will run this executable to start the service
+ExecStart=/srv/PowerPhone/PowerPhone
+Restart=always
+Environment="IOTHUB_DEVICE_SECURITY_TYPE=dps"
+Environment="IOTHUB_DEVICE_DPS_ENDPOINT=global.azure-devices-provisioning.net"
+Environment="IOTHUB_DEVICE_DPS_ID_SCOPE=YOUR_ID_SCOPE"
+Environment="IOTHUB_DEVICE_DPS_DEVICE_ID=YOUR_DEVICE_ID"
+Environment="IOTHUB_DEVICE_DPS_DEVICE_KEY=YOUR_DEVICE_KEY"
+
+[Install]
+WantedBy=multi-user.target
