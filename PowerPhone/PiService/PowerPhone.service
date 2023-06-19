@@ -8,11 +8,13 @@ SyslogIdentifier=PowerPhone
 # systemd will run this executable to start the service
 ExecStart=/srv/PowerPhone/PowerPhone
 Restart=always
+
+# Replace all the values below marked with << >> with the unique values from your Azure IoT Central App.
 Environment="IOTHUB_DEVICE_SECURITY_TYPE=dps"
 Environment="IOTHUB_DEVICE_DPS_ENDPOINT=global.azure-devices-provisioning.net"
-Environment="IOTHUB_DEVICE_DPS_ID_SCOPE=YOUR_ID_SCOPE"
-Environment="IOTHUB_DEVICE_DPS_DEVICE_ID=YOUR_DEVICE_ID"
-Environment="IOTHUB_DEVICE_DPS_DEVICE_KEY=YOUR_DEVICE_KEY"
+Environment="IOTHUB_DEVICE_DPS_ID_SCOPE=YOUR_ID_SCOPE=<<The ID scope of Azure IoT Central app>>"
+Environment="IOTHUB_DEVICE_DPS_DEVICE_ID=YOUR_DEVICE_ID=<<The unique name of your device>>"
+Environment="IOTHUB_DEVICE_DPS_DEVICE_KEY=YOUR_DEVICE_KEY=<<Use azure command shell to get the device key>>"
 
 [Install]
 WantedBy=multi-user.target
