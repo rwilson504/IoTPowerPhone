@@ -6,7 +6,17 @@ If you want to learn how to build other types of devices with Azure IoT and a Ra
 
 Video coming soon
 
-## Debugging The App
+## Setting up the PowerPhone.service Variables
+In order for the device to connect to Azure IoT central and listen for commands we need to create a service that runs on the Pi and is actively listenting.  Details for enabling this service can be found in the How to Deploy section, here we will walk through the settings in the service file and where to get those values.
+
+Name	Value Description
+IOTHUB_DEVICE_SECURITY_TYPE	DPS  The IoT Hub Device Provisioning Service is a helper service that enables just-in-time profiviions to the IoT hub.  Do not change this value.
+IOTHUB_DEVICE_DPS_ENDPOINT	global.azure-devices-provisioning.net  This is the gloabl endpoint for DPS provisioning, in this example there is no reason to change this value.
+IOTHUB_DEVICE_DPS_ID_SCOPE	In your IoT Central application, navigate to Permissions > Device connection groups. Make a note of the ID scope value.
+IOTHUB_DEVICE_DPS_DEVICE_ID Decide what you want to call this specific device.  In this example I named the device power-phone.  If you have multiple devices you may wan to also add in a number at the end of the name like power-power-01
+IOTHUB_DEVICE_DPS_DEVICE_KEY	In your IoT Central application, navigate to Permissions > Device connection groups > SAS-IoT-Devices. Make a note of the shared access signature Primary key value.
+
+
 
 ## How to Deploy
 
