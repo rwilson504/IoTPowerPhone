@@ -19,7 +19,8 @@ Final smaller breadboard installed inside phone
 
 ## Setup for Raspberry Pi with .Net Core
 
-Video coming soon
+The following articles were helpful in getting .Net Core Installed on the Raspberry Pi
+* [How to install .NET Core on Raspberry Pi](https://sukesh.me/2020/07/07/how-to-install-net-core-on-raspberry-pi/)
 
 ## Setting up the PowerPhone.service Variables
 In order for the device to connect to Azure IoT central and listen for commands we need to create a service that runs on the Pi and is actively listenting.  Details for enabling this service can be found in the How to Deploy section, here we will walk through the settings in the service file and where to get those values.
