@@ -21,6 +21,9 @@ Final smaller breadboard installed inside phone
 Overall view of the inside after installation was complete  
 ![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/10bc9fed-8355-4ff3-b755-769dad965267)
 
+Soooo much paint  
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/6325bf92-1f5c-40e7-8101-95d946855a96)
+
 
 ## Setup for Raspberry Pi with .Net Core
 I used the scripted install to add .Net core onto the Raspberry Pi devices.
