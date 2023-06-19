@@ -18,9 +18,23 @@ Final smaller breadboard installed inside phone
 ![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/890c5772-7090-42c7-9033-db9f716a1bcb)
 
 ## Setup for Raspberry Pi with .Net Core
+I used the scripted install to add .Net core onto the Raspberry Pi devices.
+[Scripted Install](https://docs.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install)
 
-The following articles were helpful in getting .Net Core Installed on the Raspberry Pi
-* [How to install .NET Core on Raspberry Pi](https://sukesh.me/2020/07/07/how-to-install-net-core-on-raspberry-pi/)
+Download the files onto the device using wget  
+'''wget https://dot.net/v1/dotnet-install.sh'''
+
+Run the following command from the terminal.   
+'''sudo bash dotnet-install.sh -c Current -InstallDir $HOME/.dotnet'''
+
+This will ensure that every time you open a bash terminal dotnet will be available.  
+'''printf '\nexport DOTNET_ROOT=$HOME/.dotnet' >> .bashrc'''  
+'''printf '\nexport PATH=$PATH:$HOME/.dotnet' >> .bashrc'''  
+
+*NOTE: it is important to use the single quotes around these otherwise the variables will be expanded within the text file.
+
+If you want to check to make sure the file was updated correctly you can run the following
+Cat .bashrc
 
 ## Setting up the PowerPhone.service Variables
 In order for the device to connect to Azure IoT central and listen for commands we need to create a service that runs on the Pi and is actively listenting.  Details for enabling this service can be found in the How to Deploy section, here we will walk through the settings in the service file and where to get those values.
