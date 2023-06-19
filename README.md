@@ -6,6 +6,11 @@ If you want to learn how to build other types of devices with Azure IoT and a Ra
 ## Physical Buildout
 I really wanted to make this device look like the bat phone from the 60's.  I spend a lot of time at antique shops looks for old "direct" phone like you would use in a factory to call a specific location.  Finally on one of my trips to Hocking Hills I found one.  I wanted the device to ring and blink like the original so I wired up all up on a solder free breadboard. I first used a larger breadboard for testing them moved everything to a smaller one that installed inside the phone with double sided tape.  I also spend a lot of time with Red Apple colordered spray paint.
 
+The following articles helped me figure out the LED and buzzer elements:
+* [Turning on an LED with your Raspberry Pi's GPIO Pins](https://thepihut.com/blogs/raspberry-pi-tutorials/27968772-turning-on-an-led-with-your-raspberry-pis-gpio-pins)
+* [HOW TO USE an LED with Raspberry Pi](https://www.youtube.com/watch?v=lyura1g0QgY)
+* [Buzzer on Raspberry Pi generating beeps](https://www.freva.com/buzzer-on-raspberry-pi-generating-beeps/)
+
 Here is the pinout from the Raspberry Pi  
 ![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/5e429538-0a1c-4d6a-b404-ebadffcc733b)
 
