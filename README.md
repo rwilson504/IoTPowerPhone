@@ -1,4 +1,5 @@
 # IoT Power Phone
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/17870f15-86a6-43f0-bbe9-b31057bafa4d)
 
 If you want to learn how to build other types of devices with Azure IoT and a Raspberry Pi check out this awesome simiulator which integrated with Azure IoT Service in real time. [Raspberry Pi Azure IoT Online Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/)
 
