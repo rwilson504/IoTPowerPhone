@@ -13,9 +13,9 @@ In order for the device to connect to Azure IoT central and listen for commands 
 | --- | --- | --- |
 |IOTHUB_DEVICE_SECURITY_TYPE	|DPS  |The IoT Hub Device Provisioning Service is a helper service that enables just-in-time profiviions to the IoT hub.  Do not change this value.|
 |IOTHUB_DEVICE_DPS_ENDPOINT	|global.azure-devices-provisioning.net  |This is the gloabl endpoint for DPS provisioning, in this example there is no reason to change this value.|
-|IOTHUB_DEVICE_DPS_ID_SCOPE	|In your IoT Central application, navigate to Permissions > Device connection groups. Make a note of the ID scope value.|
-|IOTHUB_DEVICE_DPS_DEVICE_ID |Decide what you want to call this specific device.  |In this example I named the device power-phone.  If you have multiple devices you may wan to also add in a number at the end of the name like power-power-01|
-|IOTHUB_DEVICE_DPS_DEVICE_KEY	|In your IoT Central application, navigate to Permissions > Device connection groups > SAS-IoT-Devices. Make a note of the shared access signature Primary key value.|
+|IOTHUB_DEVICE_DPS_ID_SCOPE	|In your IoT Central application, navigate to Permissions > Device connection groups. Make a note of the ID scope value.| ![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/25e3e650-4e76-4f45-a293-6d2df1c66579)|
+|IOTHUB_DEVICE_DPS_DEVICE_ID |power-phone |Decide what you want to call this specific device. In this example I named the device power-phone. If you have multiple devices you may wan to also add in a number at the end of the name like power-power-01|
+|IOTHUB_DEVICE_DPS_DEVICE_KEY	| You will generate this in the Azure Cloud Shell | In your IoT Central application, navigate to Permissions > Device connection groups > SAS-IoT-Devices.<br><br>Make a note of the shared access signature Primary key value. ![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/70e72227-fa5b-4d94-84b5-ef2bbfbae23a)<br><br>Open the Azure Cloud Shell and run the following commands: <br><br>```az extension add --name azure-iot```<br>```az iot central device compute-device-key --device-id <<device name you chose>> --pk <the SAS key you copied>```<br><br>![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/607bf7b5-6395-434e-8d67-81ff1fe1f172)<br><br>Copy and past the generated device key as the value for this attribute.|
 
 
 
