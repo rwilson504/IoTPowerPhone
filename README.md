@@ -17,7 +17,8 @@ In order for the device to connect to Azure IoT central and listen for commands 
 |IOTHUB_DEVICE_DPS_DEVICE_ID |power-phone |Decide what you want to call this specific device. In this example I named the device power-phone. If you have multiple devices you may wan to also add in a number at the end of the name like power-power-01|
 |IOTHUB_DEVICE_DPS_DEVICE_KEY	| You will generate this in the Azure Cloud Shell | In your IoT Central application, navigate to Permissions > Device connection groups > SAS-IoT-Devices.<br><br>Make a note of the shared access signature Primary key value. ![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/70e72227-fa5b-4d94-84b5-ef2bbfbae23a)<br><br>Open the Azure Cloud Shell and run the following commands: <br><br>```az extension add --name azure-iot```<br>```az iot central device compute-device-key --device-id <<device name you chose>> --pk <the SAS key you copied>```<br><br>![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/607bf7b5-6395-434e-8d67-81ff1fe1f172)<br><br>Copy and past the generated device key as the value for this attribute.|
 
-
+Additional references:
+[Tutorial: Create and connect a client application to your Azure IoT Central application](https://learn.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device?pivots=programming-language-ansi-c#get-connection-information)
 
 ## How to Deploy
 
