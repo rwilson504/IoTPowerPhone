@@ -18,6 +18,10 @@ Breakboard showing Buzzer
 Final smaller breadboard installed inside phone  
 ![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/890c5772-7090-42c7-9033-db9f716a1bcb)
 
+Overall view of the inside after installation was complete  
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/10bc9fed-8355-4ff3-b755-769dad965267)
+
+
 ## Setup for Raspberry Pi with .Net Core
 I used the scripted install to add .Net core onto the Raspberry Pi devices.
 [Scripted Install](https://docs.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install)
