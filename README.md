@@ -35,3 +35,15 @@ Video coming soon
 -Ensure that the service starts up on every reboot.
 
 ``sudo systemctl enable PowerPhone``
+
+## Create Canvas App and Flow
+I also created a simple power app that would allow me to ring the phone manually.  The call to the device is done through Power Automate using the Azure IoT Central connector.
+
+-First create a simple Canvas app with a button.
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/c1da8c2b-a989-447d-9fe7-fa82c2bc7c61)
+
+-Create a new Power Automate Flow which will be run when the button is clicked. Because the command I created is within the "Ringer" component of the devices, I chose the _Run a component command_ activity.
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/4d4f078a-3484-4f1f-9544-99cc5ee9ab61)
+
+-Configure the activity based on your settings.  The Device Id should match the device name you used in the PowerPhone.Service file.
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/df88f9ad-7c12-4ad2-8841-ddac996d906a)
