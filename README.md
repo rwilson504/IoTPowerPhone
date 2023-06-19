@@ -2,6 +2,21 @@
 
 If you want to learn how to build other types of devices with Azure IoT and a Raspberry Pi check out this awesome simiulator which integrated with Azure IoT Service in real time. [Raspberry Pi Azure IoT Online Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/)
 
+## Physical Buildout
+I really wanted to make this device look like the bat phone from the 60's.  I spend a lot of time at antique shops looks for old "direct" phone like you would use in a factory to call a specific location.  Finally on one of my trips to Hocking Hills I found one.  I wanted the device to ring and blink like the original so I wired up all up on a solder free breadboard. I first used a larger breadboard for testing them moved everything to a smaller one that installed inside the phone with double sided tape.  I also spend a lot of time with Red Apple colordered spray paint.
+
+Here is the pinout from the Raspberry Pi  
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/5e429538-0a1c-4d6a-b404-ebadffcc733b)
+
+Breadboard showing LED  
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/023a469a-b60c-4509-b437-f6ac3bd13ef8)
+
+Breakboard showing Buzzer  
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/627f5dc9-b5e7-44cd-be11-5c7bd4ef31f8)
+
+Final smaller breadboard installed inside phone  
+![image](https://github.com/rwilson504/IoTPowerPhone/assets/7444929/890c5772-7090-42c7-9033-db9f716a1bcb)
+
 ## Setup for Raspberry Pi with .Net Core
 
 Video coming soon
